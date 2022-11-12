@@ -1,5 +1,5 @@
 import { hello } from "./js/module1.js";
-import { add, evenOrOdd, sub } from "./js/module2.js";
+import { add, evenOrOdd, factArray, sub } from "./js/module2.js";
 
 hello("What the hell is going on?");
 
@@ -7,7 +7,7 @@ let result = add(10, 20);
 console.log(result);
 let subResult = sub(30, 10);
 console.log(subResult);
-// for default no need of {} and you can uase any name
+// for default no need of {} and you can use any name
 // if we have only export then use {} ===> can hold a function / value.
 
 // in case of default we can use any name while importing it.
@@ -25,3 +25,6 @@ console.log(subResult);
 //
 let resultEvenOrOdd = evenOrOdd(22);
 console.log(resultEvenOrOdd);
+
+let resultArrayFact = factArray(5);
+console.log(resultArrayFact);
